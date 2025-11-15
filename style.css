@@ -62,3 +62,10 @@ a:hover{
     align-items: center;
     justify-content: center;
 }
+
+#chartArea{
+    display: flex;
+    margin: auto;
+    width: 30rem;
+    height: auto;
+}
