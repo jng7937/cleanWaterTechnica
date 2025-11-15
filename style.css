@@ -1,0 +1,57 @@
+html{    
+    font-family: 'Asimovian','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+body{
+    background-image: url("splashBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.clearBox{
+    display: flex;
+    background-color: rgba(240, 255, 255, 0.5);
+    width: 50rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding: 10px;
+}
+
+.btn{
+    display: flex;
+    background-color: navy;
+    text-align: center;
+    border: aliceblue 2px double;
+    width: 100px;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+a:visited{
+    color: aliceblue;
+}
+
+a:hover{
+    color: aqua;
+}
+
+.videos{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
