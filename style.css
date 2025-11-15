@@ -23,6 +23,7 @@ h1{
     align-items: center;
     margin:auto;
     padding: 10px;
+    border: white double 10px;
 }
 
 .btn{
@@ -54,4 +55,10 @@ a:hover{
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+#searchArea{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
