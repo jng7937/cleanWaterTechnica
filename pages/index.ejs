@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Clean Water Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script> window.portLink = "<%- portNumberLink %>";</script>
+
+</head>
+
+<div>
+    <h1>Global Clean Water Visualizer</h1>
+</div>
+<div class="clearBox">
+    
+    <h3>According to UNICEF, between 2015 and 2024, 961 million people gained access to 
+        safely managed drinking water services. Currently, 74% of people around the world 
+        have access to clean water. However, 2.1 billion people still lack safely managed drinking water.
+    </h3>
+    
+</div>
+<br>
+<br>
+<div class="btn">
+    <a href="./visualizer.html">Click Here to Explore</a>
+</div>
+<br>
+<div id="searchArea">
+    <p style="color: aliceblue;">Search a Country:   </p>
+    <select id="selectCountry">
+        <option value="">Loading countries...</option>
+    </select>
+</div>
+<br><br>
+<div id="chartArea"> 
+    <canvas id="myChart" width="300" height="150"></canvas>
+</div>
+
+
+<div class="videos">
+    
+</div>
+</html>
+<script src="/script.js" defer></script>
