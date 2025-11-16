@@ -10,5 +10,39 @@
     <div>
     <h1>Global Clean Water Visualizer</h1>
 </div>
+<canvas id="tdCanvas" width="1280" height="720"></canvas>
 </body>
+
+<script defer>
+    const canvas = document.getElementById('tdCanvas');
+    const ctx = canvas.getContext('2d');
+    // Connect to TouchDesigner WebSocket
+const ws = new WebSocket('ws://localhost:4000');
+
+ws.onopen = () => console.log('Connected to TouchDesigner');
+
+ws.onmessage = (event) => {
+    const droplets = JSON.parse(event.data);
+
+    // Clear canvas each frame
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    droplets.forEach(d => {
+        // Fixed color for all droplets
+        ctx.fillStyle = 'blue';
+
+        // Map X/Y from TouchDesigner ranges to canvas
+        const x = (d.x / 100) * canvas.width;
+        const y_flipped = canvas.height - (d.y / 1000) * canvas.height;
+
+        // Fixed radius
+        const radius = 4;
+
+        // Draw droplet
+        ctx.beginPath();
+        ctx.arc(x, y_flipped, radius, 0, Math.PI*2);
+        ctx.fill();
+    });
+};
+</script>
 </html>
