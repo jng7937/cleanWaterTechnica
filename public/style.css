@@ -4,17 +4,15 @@ html{
     color: rgb(146, 204, 255);
     text-shadow: 3px 3px 6px rgb(0, 63, 157);
 }
-
+html, body {
+    margin: 0;
+    height: 100%;
+}
 body{
     background-image: url("splashBG2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-}
-
-html, body {
-    margin: 0;
-    height: 100%;
 }
 
 h1{
