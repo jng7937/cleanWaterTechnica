@@ -11,6 +11,12 @@ body{
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 h1{
     color: aliceblue;
     text-align: center;
