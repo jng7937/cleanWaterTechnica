@@ -1,10 +1,12 @@
 html{    
     font-family: 'Asimovian','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
+    color: rgb(146, 204, 255);
+    text-shadow: 3px 3px 6px rgb(0, 63, 157);
 }
 
 body{
-    background-image: url("splashBG.jpg");
+    background-image: url("splashBG2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -13,10 +15,14 @@ h1{
     color: aliceblue;
     text-align: center;
 }
+strong{
+    font-size: 1.5rem;
+    color: aliceblue;
+}
 
 .clearBox{
     display: flex;
-    background-color: rgba(240, 255, 255, 0.5);
+    background-color: rgba(240, 255, 255, 0.2);
     width: 50rem;
     text-align: center;
     justify-content: center;
@@ -24,6 +30,7 @@ h1{
     margin:auto;
     padding: 10px;
     border: white double 10px;
+    border-radius: 20px;
 }
 
 .btn{
@@ -50,7 +57,7 @@ a{
 }
 
 a:hover{
-    color: aqua;
+    color: rgb(146, 204, 255);
 }
 
 .videos{

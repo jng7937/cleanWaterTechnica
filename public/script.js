@@ -81,6 +81,9 @@ async function updateChart(country){
             plugins: {
                 legend: {
                     position: 'top',
+                    labels:{
+                        color: "white",
+                    },
                 },
                 tooltip: {
                     callbacks: {

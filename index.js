@@ -39,6 +39,14 @@ app.get("/", (request, response) => {
     response.render("index", variables);
 });
 
+app.get("/visualizer", (request, response) =>{
+    let portLink = `http://localhost:${portNumber}/`;
+    let variables = {
+        portNumberLink:portLink
+    };
+    response.render("visualizer", variables);
+});
+
 app.get("/countries", (request, response) => {
     (async () =>{
         try{
